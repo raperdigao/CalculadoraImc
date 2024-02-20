@@ -6,7 +6,7 @@ function pegarValores() {
     // trim é para remover os espações em branco
     let nome = document.getElementById('nome').value.trim();
     let altura = parseFloat(document.getElementById('altura').ariaValueMax);
-    let peso = parseFloat(Document.getElementById('peso').value);
+    let peso = parseFloat(document.getElementById('peso').value);
 
     // Transformou em objeto recebendo os dados do front end
     let dadosUsuarios = {
