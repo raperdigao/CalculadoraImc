@@ -5,15 +5,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--fontPrincipal);
-
 }
 
 :root {
     --fontPrincipal: "Montserrat", sans-serif;
-    --colorPrimary: #30D158;
-    --colorSecundary: #FF453A;
+    --colorPrimay: #30D158;
+    --colorSecondary: #FF453A;
     --backgroundBody: #F2F2F7;
-    --backgorundSection: #FFFFFF;
+    --backgroundSection: #FFFFFF;
 }
 
 body {
@@ -24,21 +23,22 @@ main {
     margin: 0 auto;
     max-width: 1440px;
     width: 70%;
-    /* padding shorthand atalho top botton left right */
     padding: 30px 0;
 }
 
 section {
-    background-color: var(--backgorundSection);
-    border-radius: 8px;
-    box-shadow: 10px 10px 15px #00000025;
     padding: 25px;
     margin: 30px 0;
+
+    background-color: var(--backgroundSection);
+    border-radius: 8px;
+    box-shadow: 10px 10px 15px #00000025;
 }
 
 form {
     height: 300px;
     margin: 30px 0;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -55,29 +55,22 @@ form {
 input {
     height: 30px;
     border-radius: 6px;
-    /* Borda dos inputs */
     border: 1px solid #6d6d6d;
-
     font-weight: medium;
     text-indent: 8px;
-
 }
 
-/* Estilizar o input placeholder com pseudoelemento */
 input::placeholder {
-    color: #3c3c43;
+    color: #4c4c43;
 }
 
-/* Estilizar o type number de um input */
 input[type="number"] {
     -moz-appearance: textfield;
     appearance: textfield;
 }
 
-/* Remover as setinha de cima e baixo do type number dos inputs */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-
     -webkit-appearance: none;
     margin: 0;
 }
@@ -95,41 +88,31 @@ button:hover {
     cursor: pointer;
 }
 
-/* Estilizar o button com atributo do submit */
 button[type="submit"] {
-    background-color: var(--colorPrimary);
-    color: var(--backgorundSection);
+    background-color: var(--colorPrimay);
+    color: var(--backgroundSection);
 }
 
 button[type="submit"]:hover {
     background-color: #34c759;
 }
 
-
-/* Estilizar a tabela que ira receber o cadastro */
 table {
     width: 100%;
     margin: 30px 0;
     border: none;
-    /* remover os espaçõs das bordas do cadastro */
-    /* Tira a linha entre as colunas da tabela */
     border-collapse: collapse;
-
 }
 
 caption {
     font-size: 20px;
 }
 
-/* A virgula pega duas classes ou mais */
 caption,
 th {
     text-align: left;
 }
 
-/* As linhas impares receberam cores diferentes */
-/* odd é linhas impares */
-/* even é linhas pares */
 tbody>tr:nth-child(odd) {
     background-color: #f2f2f7;
 }
@@ -150,11 +133,15 @@ td {
     padding: 15px;
 }
 
-.botao-tabela {
-    background-color: var(--colorSecundary);
+.botao-tabela{
+    background-color: var(--colorSecondary);
     color: white;
 }
 
-.botao-tabela:hover {
+.botao-tabela:hover{
     background-color: #be4741;
+}
+
+.linha-mensagem{
+    text-align: center;
 }
